@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Blog App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack blog application built using the MERN (MongoDB, Express, React, Node.js) stack.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [API Endpoints](#api-endpoints)
+- [Testing](#testing)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This blog app provides a platform for users to create, edit, and view blog posts, as well as interact through comments. It is built using modern web technologies, providing a responsive and user-friendly experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- User authentication and authorization
+- Blog post creation, editing, and deletion
+- Commenting system with moderation features
+- Responsive and intuitive user interface
+- RESTful API for easy integration with other applications
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements
 
-### `npm run build`
+- Node.js
+- MongoDB
+- npm or yarn
+- ...
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    git clone `https://github.com/Njokujr/MERN-BlogApp.git`
+    cd MERN-BlogApp
 
-### `npm run eject`
+2. Install dependencies in both client & server folders:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    npm install
+        OR
+    yarn install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Create a `.env` file in the root directory based on the `.env.example` file.
+2. Set the required environment variables such as database connection details, API keys, etc.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. Start the backend server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm run dev
+        OR
+    yarn dev
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Start the frontend development server:
 
-### Code Splitting
+    npm start
+        OR
+    yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+"Then visit `http://localhost:3000`in your browser to access the blog app".
 
-### Analyzing the Bundle Size
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    MERN-BlogApp/
+    |-- client/
+    |   |-- public/
+    |   |-- src/
+    |-- server/
+    |-- ...
 
-### Making a Progressive Web App
+**client/**- This directory houses all required files and folders to structure the frontend of the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**server/**- This directory structures the requirments for the backend to run functionally.
 
-### Advanced Configuration
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### User Routes (Protected) - `/api/`
+Document the available API endpoints, request and response formats, and any authentication requirements.
 
-### Deployment
+- `GET /api/posts`: Retrieve all blog posts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `GET /api/posts/:id`: Retrieve a specific blog post.
 
-### `npm run build` fails to minify
+- `POST /api/posts`: Create a new blog post.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `PUT /api/posts`: Updates a blog post.
+
+- `DELETE /api/posts/:id`: Deletes a specific blog post.
+
+- `GET /api/comments/:postId`: Retrieve comments for a specific blog post.
+
+- `POST /api/comments`: Create a new comment.
