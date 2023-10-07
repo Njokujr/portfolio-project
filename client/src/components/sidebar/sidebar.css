@@ -1,0 +1,75 @@
+.sidebar{
+  flex: 3;
+  
+  
+}
+.sidebarItem{   
+margin: 45px 40px 0 -27px;
+background-color: rgb(255, 255, 255);
+text-align: center;
+padding: 10px 0;
+box-sizing: border-box;
+letter-spacing: 2px;
+}
+.sidebarTitle{
+font-size: 18px;
+font-weight: 600;
+}
+.recentPostDate{
+font-size: 10px;
+}
+.sidebarItem1{
+margin:10px 40px 0 -27px;
+background-color: rgb(255, 255, 255);
+text-align: center;
+padding: 10px 0;
+box-sizing: border-box;
+letter-spacing: 2px;
+}
+.recentPost{
+margin-top: 5px;
+text-align: left;
+border-bottom: 1px solid rgb(228, 227, 227);
+margin-bottom: 10px;
+padding-left: 5px;
+
+}
+.recentPost h3{
+color: #292929;
+font-weight: 500;
+letter-spacing: 1px;
+font-size: 14px;
+}
+.recentPost span{
+font-size: 10px;
+font-weight: 400;
+color: #292929;
+
+}
+hr{
+line-height: 200px;
+}
+.topIcon{
+font-size: 30px;
+margin-left: 10px;
+color: #444;
+cursor: pointer;
+}
+.sidebarItem2{
+margin:10px 30px 0 -27px;
+box-sizing: border-box;
+letter-spacing: 2px;
+display: flex;
+}
+.iconAds{
+width: 60px;
+height: 60px;
+margin-left: 5px;
+border-radius: 5px;
+object-fit: cover;
+}
+.titleAds{
+font-size: 11px;
+margin-left: 5px;
+margin-top: 13px;
+}

@@ -1,0 +1,157 @@
+.top{
+  color: rgba(240, 236, 236, 0.836);
+  position: fixed; 
+  top:0;
+  width: 100%;
+   z-index: 999;
+   background: linear-gradient(to top, transparent 0%, rgba(97, 96, 96, 0.603) 50%);
+   cursor: pointer;
+}
+.scrolled {
+  background-color: rgba(163, 162, 152, 0.993);
+  z-index: 3;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+.topContainer{
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Playfair Display', serif; 
+  padding:  10px 50px;
+  font-weight: 450;
+}
+.topLeft{
+  flex: 3.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo{
+  width: 120%;
+  height: 60px;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 18px;
+  cursor: pointer;
+
+  
+}
+.topRight{
+  
+  flex: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left:60px;
+}
+
+.topImg{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  margin-right: -110px;
+}
+.topCenter{
+  flex: 7 ;
+}
+.topList{    
+  justify-content:flex-end;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;  
+  margin-right: -54px;
+}
+.topListItem{
+  margin-left: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 0.2rem;
+  display: inline-block;
+}
+
+
+.topListItem::before{
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2.5px;
+  background-color:#310606;
+  transition: width 0.25s ease-out;
+}
+.topListItem:hover::before{
+  width: 100%;
+  left: 0;
+  right: auto; 
+  color: rgb(224, 225, 227);
+}
+
+.topLogin{
+  display: flex;
+  justify-content:flex-end;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+.topListLogin{
+  margin:5px;
+  font-size: 17px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #310606;
+  border-radius: 20px;
+  padding: 0px 8px 0px 8px ;
+  text-align: center;
+  
+}
+.topListLogin:hover{
+  background-color:#310606 ;
+}
+.profile{
+  margin-right: -44px;
+  position: relative;
+  display: inline-block;
+}
+.icon {
+  margin: -7px 15px;
+  cursor: pointer;
+}
+.options{
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #3d3c3c91;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+ 
+}
+.options span{
+  color: white;
+   padding: 10px 15px;
+   text-decoration: none;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
+.profile:hover .options {
+  display: block;   
+}
+.profile span:hover{
+  background-color: #310606;
+
+}

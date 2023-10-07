@@ -1,0 +1,42 @@
+.commentForm {
+	width: 62vw;
+}
+.commentTitle {
+	color: #333;
+    margin: 20px 0px 5px 43px;
+    font-family:"Quicksand", sans-serif;
+    font-size: 28px;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+
+.commentTextArea{
+	font-size: 16px;
+    width: 101%;
+    margin-left:40px ;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 8px 16px;
+
+}
+.commentBtn {
+	width: 100px;
+	padding: 8px 12px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	background-color: #7d0505;
+	font-weight: bold;
+	margin: 16px 0 0 40px;
+	transition: all 0.3s ease;
+    font-size: 20px;
+	position: relative;
+	left: 700px;
+	top: 5px;
+}
+
+.commentBtn:hover {
+	transform: scale(1.07);
+}

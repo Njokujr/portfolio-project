@@ -1,0 +1,40 @@
+.header{
+  background: url("https://tuyensinh.vanlanguni.edu.vn/wp-content/uploads/2020/03/vlu-santhuong-c.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  filter: grayscale(100%);
+   -webkit-filter: grayscale(60%);
+   -moz-filter: grayscale(30%);
+   -ms-filter: grayscale(30%);
+   -o-filter: grayscale(30%);
+   -webkit-filter: brightness(100%);
+  
+} 
+.headerTitles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  color: #f9fd00;
+  text-shadow: 
+  1px  1px     rgb(255, 251, 0), 
+ -1px  1px     rgb(255, 251, 0),
+  1px -1px     rgb(255, 251, 0),
+ -1px -1px     rgb(255, 251, 0),
+  1px  1px 5px #555;
+  font-weight: 600px;
+}
+.headerTitleSm {
+  position: absolute;
+  top: 18%;
+  font-size: 45px;
+}
+
+.headerTitleLg {
+    margin-top: 20px;
+  position: absolute;
+  top: 20%;
+  font-size: 100px;
+}

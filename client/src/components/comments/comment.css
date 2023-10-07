@@ -1,0 +1,87 @@
+.commentWrapper {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-shadow: 0px 0px 16px -8px rgba(0.68);
+	box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+	border-radius: 8px;
+	max-width: 900px;
+	margin: 30px 18px 4px 37px;
+	background: rgba(244, 244, 244, 0.858);
+}
+
+.commentTop {
+	display: flex;
+	flex-direction: column;
+}
+
+.commentUserInfo {
+	display: flex;
+	flex-direction: column;
+	width: 100px;
+}
+
+.commentImg {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.commentName {
+	font-weight: bold;
+	color: goldenrod;
+	margin-bottom: 5px;
+	font-size: 17px;
+}
+.commentUpdate {
+	border: none;
+	background-color: inherit;
+}
+.commentUpdate:focus {
+	outline: none;
+}
+
+.commentItem {
+	color: #333;
+    margin-left: 10px;
+}
+
+.commentBottom {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.commentDate {
+	font-size: smaller;
+	color: rgb(153, 54, 74);
+}
+.commentUpdateBtn {
+	color: white;
+	background-color: #7d0505;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+.commentEdit {
+	border-bottom: 1px dotted crimson;
+	cursor: pointer;
+	color: rgb(2, 30, 106);
+}
+
+.commentDelete {
+	border-bottom: 1px dotted crimson;
+	cursor: pointer;
+	margin-left: 20px;
+	color: crimson;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.commentWrapper {
+		margin-left: 55px;
+	}
+}

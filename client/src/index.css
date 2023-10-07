@@ -1,0 +1,53 @@
+
+
+.error {
+	background-color:#d40606 ;
+	padding: 6px 0;
+	border-radius: 8px;
+	margin: auto;
+	margin-bottom: 8px;
+	color: white;
+	font-size: 13px;
+	font-style: italic;
+	text-align: center;
+	font-weight: 600;
+	width: 40%;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+.success {
+	background-color: rgb(4, 184, 4);
+	color: white;
+	padding: 6px;
+	border-radius: 8px;
+	text-align: center;
+	width: 40%;
+	margin: auto;
+	margin-bottom: 8px;
+	position: fixed;
+	top: 80px;
+	left: 0;
+	right: 0;
+	z-index: 999;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 1rem;
+	padding-bottom: 3rem;
+}
+@media only screen and (max-width: 1115px) {
+	.container {
+		max-width: 1000px;
+	}
+}

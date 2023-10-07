@@ -1,0 +1,14 @@
+
+.container{
+	margin: auto;
+	max-width: 1300px;
+	overflow: hidden;
+	
+	
+}
+
+.singlePost {
+	display: flex;
+	gap: 1.5rem;
+	margin-top: 5rem;
+}

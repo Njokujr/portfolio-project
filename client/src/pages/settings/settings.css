@@ -1,0 +1,167 @@
+
+.settings {
+  display: flex;
+  width: 100%;
+  height: 110vh;
+  background: linear-gradient(rgba(123, 123, 123, 0.434), rgba(159, 155, 155, 0.571)), url("https://images.pexels.com/photos/3808904/pexels-photo-3808904.jpeg");
+  background-size: cover;
+  
+}
+
+.settingsWrapper {
+  padding: auto;
+  margin: auto;
+}
+.settingsbox{
+  margin-top: 50px;
+  width: 630px;
+  height:550px;
+  background-color: #f4f4f4dc;
+  border-radius: 5px;
+}
+
+.settingsTitle {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  
+}
+
+.settingsUpdateTitle {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #310606;
+  
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.settingsPP {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.settingsPP > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.settingsPPIcon {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #310606;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.settingsForm > label {
+  font-size: 17px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+.settingsForm > input {
+  color: gray;
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid lightgray;
+  
+}
+
+.settingsSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #310606;
+    padding: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.changePW{
+display: flex;
+margin-top: 10px;
+margin-left: 15px;
+font-weight: 600;
+}
+.changeNewPW{
+display: flex;
+margin-top: 20px;
+margin-left: 15px;
+font-weight: 600;
+}
+.currentPW{
+font-size: 13px;
+margin-top: 10px;
+}
+.inputCurrentPW{
+color: gray;
+  margin: 5px 0;
+  width: 420px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 1px solid lightgray;
+  margin-left: 37px;
+}
+.inputNewPW{
+color: gray;
+margin: 10px 0;
+width: 420px;
+height: 30px;
+border: none;
+border-radius: 5px;
+border-bottom: 1px solid lightgray;
+margin-left: 55px;
+}
+.confirmPW{
+color: gray;
+margin: 5px 0;
+width: 420px;
+height: 30px;
+border: none;
+border-radius: 5px;
+border-bottom: 1px solid lightgray;
+margin-left: 32px;
+}
+.lblUser{
+font-size: 17px;
+font-weight: 600;
+}
+.inputUser{
+color: gray;
+margin: 5px 0;
+width: 420px;
+height: 30px;
+border: none;
+border-radius: 5px;
+border-bottom: 1px solid lightgray;
+margin-left: 82px;
+}
+.notePW{
+font-size: 12px;
+font-style: italic;
+color: red;
+margin-left: 158px;
+}
+.errorMessage{
+font-size: 14px;
+color: #000;
+}
